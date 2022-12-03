@@ -10,18 +10,24 @@ todos = [
         isCompleted: false
     },
     {
-        entity:3,
-        content: 'practice speech in Chinese',
+        entity: 3,
+        content: 'take a bath',
         isCompleted: false
     }
 ]
 
+for (var todo of todos){
+    if (todo.isCompleted ==true){
+        console.log(todo.content);
+    }
+}
 
-console.log(document.getElementById('my-form'));
-console.log(document.getElementsByTagName('li'));
-const btn = document.querySelector('.btn');
-btn.style.background = 'white'
-btn.addEventListener('click',(e) =>{
-    e.preventDefault();
-    console.log(e.target.id);
+todos.forEach(function(todo){
+    console.log(todo.content);
 })
+var todoCompleted = todos.filter(function(todo){
+    return todo.isCompleted == true;
+}).map(function(todo){
+    return todo.content;
+})
+console.log(todoCompleted);
