@@ -29,12 +29,14 @@ a:link {
 	font-weight : normal; /*(normal, bold, thickness: 100 to 900)*/
 	text-decoration : none;
 	color: #0000FF;
-	background: transparent; 
+	background: transparent;
+	text-align: center; 
 }
 a:visited {
 	text-decoration : none;
 	color: #4B0082;
 	background: transparent; 
+	text-align: center;
 }
 a:hover {
 	color: #FA0000;
@@ -48,5 +50,5 @@ a:active {
 	text-decoration : underline; 
 }
 #item1{
-		font-weight: bold;
+	font-weight: bold;
 }
