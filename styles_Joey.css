@@ -19,6 +19,9 @@ p.header{
     font-family: 'Times New Roman';
     font-size: large;
 }
+.note{
+    font-size: small;
+}
 .ref{
     font-size: large;
 }
